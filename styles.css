@@ -1,0 +1,154 @@
+/* GENERAL STYLES */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #fff;
+  scroll-behavior: smooth;
+  background-color: #4169E1;
+}
+img {
+  display: block;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav a {
+  margin-left: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HOME */
+.home {
+  height: 100vh;
+  background: #4169E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.home h1 {
+  font-size: 3rem;
+}
+.home h2 {
+  font-size: 1.25rem;
+  color: #f1f1f1;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: #4169E1;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* ABOUT */
+.about {
+  padding: 5rem 2rem;
+}
+.about-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-text {
+  flex: 1;
+  padding: 1rem;
+}
+.about-text h2 {
+  font-size: 2rem;
+}
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.about-image {
+  flex: 1;
+  padding: 1rem;
+}
+.about-image img {
+  max-width: 300px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* CONTACT */
+.contact {
+  padding: 5rem 1rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2rem;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact input,
+.contact textarea {
+  padding: .75rem;
+  margin: .5rem 0;
+  border-radius: 4px;
+  border: none;
+}
+.contact button {
+  padding: .75rem;
+  background: #fff;
+  color: #4169E1;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #f1f1f1;
+}
+
+/* FOOTER */
+footer {
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
